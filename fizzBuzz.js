@@ -16,3 +16,5 @@ function fizzBuzz(start, end) {
 	
 }
 fizzBuzz(1,100);
+
+//fizzBuzz function decleration using if if as a &&.
