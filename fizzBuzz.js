@@ -1,13 +1,16 @@
 //fizzBuzz.js
 
-function fizzBuzz(start, end) {
+function fizzBuzz(end) {
 	
-	for(var i = start ; i <= end; i++) {
+	for(var i = 0; i <= end; i++) {
 		var count = "";
-		if (i % 3 === 0) {
+		if(i % 15 ===0 ) {
+			count += "FIZZBUZZ"
+		}	
+		else if (i % 3 === 0) {
 			count += "Fizz";
 		}
-		if (i % 5 === 0) {
+		else if (i % 5 === 0) {
 			count += "Buzz";
 		}
 		console.log(count || i);
@@ -15,6 +18,6 @@ function fizzBuzz(start, end) {
 	
 	
 }
-fizzBuzz(1,100);
+fizzBuzz(100);
 
 //fizzBuzz function decleration using if if as a &&.
